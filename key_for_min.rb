@@ -3,7 +3,7 @@
 require "pry"
 
 def key_for_min_value(name_hash)
-  smallest = 10000
+  smallest = name_hash.keys.sample
   small_name = nil
   name_hash.each do |key, value|
     if value < smallest
